@@ -224,7 +224,11 @@ npm run preview	Preview production build
 npm run lint	Run ESLint checks
 🖼️ Screenshots
 
-📌 Store all UI screenshots inside a screenshots/ directory and name them clearly based on the page.
+Page Screenshot Log In Page -<img width="1916" height="847" alt="image" src="https://github.com/DhruvSinghRawat/Personal-Expense-Tracker/blob/main/frontend/expense-tracker/src/assets/images/LoginPage.png" />
+Sign Up Page-<img width="1850" height="841" alt="image" src="https://github.com/DhruvSinghRawat/Personal-Expense-Tracker/blob/main/frontend/expense-tracker/src/assets/images/Signup.png" />
+Dashboard -<img width="1920" height="1937" alt="screencapture-localhost-5179-home-2026-01-02-20_06_41" src="https://github.com/DhruvSinghRawat/Personal-Expense-Tracker/blob/main/frontend/expense-tracker/src/assets/images/Dashboard.png" />
+Expense Page-<img width="1920" height="1345" alt="image" src="https://github.com/DhruvSinghRawat/Personal-Expense-Tracker/blob/main/frontend/expense-tracker/src/assets/images/Expense.png" />
+Income Page -<img width="1920" height="1340" alt="image" src="https://github.com/DhruvSinghRawat/Personal-Expense-Tracker/blob/main/frontend/expense-tracker/src/assets/images/Income.png" />
 
 🚀 Current Status
 
