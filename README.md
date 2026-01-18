@@ -1,236 +1,237 @@
-# Expense Tracker App - Frontend
+💰 Personal Expense Tracker – Frontend
 
-A modern React-based frontend for the Expense Tracker application built with Vite, Tailwind CSS, and Recharts.
+A clean and responsive frontend interface for an Expense Tracker system, developed using React with Vite, styled via Tailwind CSS, and enriched with interactive charts using Recharts.
 
+⚡ Getting Started
 
-## 🚀 Quick Start
+Install dependencies:
 
 npm install
+
+
+Run the development server:
 
 npm run dev
 
-The application will open at http://localhost:5173
+
+The app will be available at:
+👉 http://localhost:5173
+
+📁 Project Initialization
+
+Navigate to the frontend directory:
+
+cd frontend/expense-tracker
+
+Development Mode
+npm run dev
 
 
-📦 Project Setup
-Installation-cd frontend/expense-tracker
+Starts the app with Hot Module Replacement (HMR).
 
-npm install
-
-Development Server-npm run dev
-
-Runs the app in development mode with hot module replacement (HMR).
-
-Build for Production-npm run build
-
-Creates an optimized production build in the dist/ folder.
-
-Preview Production Build-npm run preview
+Production Build
+npm run build
 
 
+Generates an optimized build inside the dist/ directory.
 
-🎯 Key Features
-
-Authentication
-
-User registration and login
-
-JWT token-based authentication
-
-Protected routes
-
-User context for state management
-
-Dashboard
-
-Financial overview with charts
-
-Income tracking
-
-Expense tracking
-
-Recent transactions
-
-Income and expense lists
-
-Last 30/60 days analytics
-
-Reports
-
-Download income reports as Excel
-
-Download expense reports as Excel
-
-Data visualization with Recharts
-
-Profile
-
-Profile photo upload
-
-User profile management
-
-🛠️ Tech Stack
-
-React 19 - UI framework
-
-Vite - Build tool and dev server
-
-Tailwind CSS - Utility-first CSS framework
-
-Recharts - Data visualization library
-
-React Router - Client-side routing
-
-Axios - HTTP client for API calls
-
-React Icons - Icon library
+Preview Build
+npm run preview
 
 
-📱 Available Components
+Serves the production build locally for testing.
 
+✨ Core Functionalities
+🔐 Authentication & Security
+
+User signup and login flow
+
+JWT-based authentication mechanism
+
+Protected routes for authorized access only
+
+Centralized user state using React Context
+
+📊 Dashboard Overview
+
+Visual representation of financial data
+
+Income and expense summaries
+
+Recent transaction history
+
+Analytics for the last 30 and 60 days
+
+📈 Income & Expense Management
+
+Add, view, and remove income entries
+
+Add, view, and remove expense records
+
+Categorized transaction lists
+
+📄 Reports & Downloads
+
+Export income data as Excel files
+
+Export expense data as Excel files
+
+Graphical insights using Recharts
+
+👤 User Profile
+
+Upload and update profile picture
+
+Manage personal user details
+
+🧰 Technology Stack
+
+React 19 – Frontend library
+
+Vite – Fast development server and build tool
+
+Tailwind CSS – Utility-based styling
+
+Recharts – Charting and visualization
+
+React Router – Client-side navigation
+
+Axios – API communication
+
+React Icons – Icon support
+
+🧩 Component Structure
 Layout Components
 
-Navbar - Top navigation bar
+Navbar – Top navigation
 
-SideMenu - Sidebar navigation
+SideMenu – Sidebar navigation
 
-AuthLayout - Authentication pages layout
+AuthLayout – Layout for authentication pages
 
-DashboardLayout - Dashboard pages layout
+DashboardLayout – Wrapper for dashboard views
 
-Card Components
+Reusable Cards
 
-InfoCard - Display financial information
+InfoCard – Displays financial metrics
 
-TransactionInfoCard - Display transaction details
+TransactionInfoCard – Transaction details
 
-CharAvatar - User avatar with initial
+CharAvatar – User avatar with initials
 
-Dashboard Components
+Dashboard Modules
 
-ExpenseOverview - Expense summary
+ExpenseOverview
 
-IncomeOverview - Income summary
+IncomeOverview
 
-FinanceOverview - Overall financial view
+FinanceOverview
 
-ExpensesList - List of expenses
+ExpensesList
 
-IncomeList - List of income entries
+IncomeList
 
-RecentTransactions - Recent activity
+RecentTransactions
 
-Last30DaysExpenses - Expense chart
+Last30DaysExpenses
 
-IncomeLast60Days - Income chart
+IncomeLast60Days
 
+🔗 Backend API Communication
 
-🔗 API Integration
-
-The frontend communicates with the backend API. Key endpoints:
+The frontend interacts with REST APIs as listed below:
 
 Authentication
 
-POST /api/v1/auth/register - User registration
+POST /api/v1/auth/register – Register new user
 
-POST /api/v1/auth/login - User login
+POST /api/v1/auth/login – User login
 
-GET /api/v1/auth/getUser - Get current user
+GET /api/v1/auth/getUser – Fetch logged-in user
 
-POST /api/v1/auth/upload-image - Upload profile photo
+POST /api/v1/auth/upload-image – Upload profile image
 
-Income
+Income APIs
 
-GET /api/v1/income/get - Get all income
+GET /api/v1/income/get
 
-POST /api/v1/income/add - Add income
+POST /api/v1/income/add
 
-DELETE /api/v1/income/:id - Delete income
+DELETE /api/v1/income/:id
 
-GET /api/v1/income/download-excel - Download income report
+GET /api/v1/income/download-excel
 
-Expense
-GET /api/v1/expense/get - Get all expenses
+Expense APIs
 
-POST /api/v1/expense/add - Add expense
+GET /api/v1/expense/get
 
-DELETE /api/v1/expense/:id - Delete expense
+POST /api/v1/expense/add
 
-GET /api/v1/expense/download-excel - Download expense report
+DELETE /api/v1/expense/:id
+
+GET /api/v1/expense/download-excel
 
 Dashboard
 
-GET /api/v1/dashboard - Get dashboard data
+GET /api/v1/dashboard
 
+🎨 Styling Approach
 
-🎨 Styling
-The project uses Tailwind CSS for styling. Global styles are defined in src/index.css.
+Tailwind CSS is used throughout the project for consistent and responsive styling.
+Global styles are maintained in src/index.css.
 
-🔒 Authentication Flow
+🔐 Authentication Workflow
 
-User signs up or logs in via the auth pages
+User signs up or logs in
 
 Backend returns a JWT token
 
 Token is stored in localStorage via userContext
 
-Token is sent with every API request via axios interceptor
+Axios interceptor attaches token to every request
 
-Protected routes redirect unauthenticated users to login
+Unauthorized users are redirected to the login page
 
-📈 State Management
+🧠 State Management
 
-The app uses React Context (userContext) for managing:
+React Context (userContext) manages:
 
-Current user information
+Logged-in user details
 
-Authentication state
+Authentication status
 
-User token
+JWT token handling
 
-🖼️ Application Screenshots
+🚦 Routing Configuration
 
-Below are some key screens from the application demonstrating the user flow and core features.
+Handled using React Router:
 
-🚦 Routing
+/auth/login – Login screen
 
-Routes are managed using React Router:
+/auth/signup – Registration screen
 
-/auth/login - Login page
+/dashboard – Main dashboard
 
-/auth/signup - Registration page
+/dashboard/income – Income management
 
-/dashboard - Main dashboard
+/dashboard/expense – Expense management
 
-/dashboard/income - Income page
-
-/dashboard/expense - Expense page
-
-📝 Scripts
-
+📜 NPM Scripts
 Command	Description
+npm run dev	Start development server
+npm run build	Build for production
+npm run preview	Preview production build
+npm run lint	Run ESLint checks
+🖼️ Screenshots
 
-npm run dev	-Start development server
+📌 Store all UI screenshots inside a screenshots/ directory and name them clearly based on the page.
 
-npm run build-	Build for production
+🚀 Current Status
 
-npm run preview-	Preview production build
+Actively developed and ready for feature enhancements.
 
-npm run lint-	Run ESLint
-
-Page	Screenshot
-
-
-📌 Make sure to place your images inside a screenshots folder in the repository and name them accordingly.
-
-🚀 Project Status
-
-👩‍💻 Author
+👨‍💻 Author
 
 Dhruv Singh Rawat
-
-4th-Year Computer Science Undergraduate
-
-Passionate about Full-Stack Development and UI/UX
-
-
+4th-Year B.Tech (CSE) Undergraduate
+Interested in Full-Stack Development, UI/UX, and scalable web applications
