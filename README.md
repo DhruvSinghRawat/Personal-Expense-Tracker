@@ -230,6 +230,10 @@ Dashboard -<img width="1920" height="1937" alt="screencapture-localhost-5179-hom
 Expense Page-<img width="1920" height="1345" alt="image" src="https://github.com/DhruvSinghRawat/Personal-Expense-Tracker/blob/main/frontend/expense-tracker/src/assets/images/Expense.png" />
 Income Page -<img width="1920" height="1340" alt="image" src="https://github.com/DhruvSinghRawat/Personal-Expense-Tracker/blob/main/frontend/expense-tracker/src/assets/images/Income.png" />
 
+## 🎥 Project Walkthrough Video
+
+[Click here to watch the project walkthrough on YouTube](https://youtu.be/VpPWUxt9jSA)
+
 🚀 Current Status
 
 Actively developed and ready for feature enhancements.
